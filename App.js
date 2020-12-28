@@ -1,8 +1,8 @@
 import React from 'react';
-import Welcome from './QuranApp/src/';
+import Welcome from './src/router';
 import 'react-native-gesture-handler';
 import { StatusBar } from 'react-native';
-import store from './QuranApp/src/redux/store'
+import store from './src/redux/store'
 import { Provider } from 'react-redux';
 
 

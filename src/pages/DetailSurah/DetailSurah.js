@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Text, View, Image, StyleSheet, FlatList, ActivityIndicator } from 'react-native'
 import TrackPlayer from 'react-native-track-player';
-import ListItemRender from './ListItemRender';
-import TrackPlayerInit from './TrackPlayerInit';
-import SwitchCaseSurah from './json/SwitchCaseSurah';
+import ListItemRender from '../../components/molecules/ListItemRender/ListItemRender';
+import TrackPlayerInit from '../../components/molecules/TrackPlayerInit/TrackPlayerInit';
+import SwitchCaseSurah from '../../json/SwitchCaseSurah';
 
 const DetailSurah = (props) => {
     // const [isLoading, setLoading] = useState(false);
@@ -70,11 +70,11 @@ const DetailSurah = (props) => {
                         <>
                             <View style={styles.container}>
                                 <View style={styles.box}>
-                                    <Image style={styles.imageHeader} source={require('../assets/images/surah-header.png')} />
+                                    <Image style={styles.imageHeader} source={require('../../assets/images/surah-header.png')} />
                                     <Text style={styles.titleSurah}>{data.nama_latin}</Text>
                                     <Text style={styles.subTitleSurah}>{data.arti}</Text>
                                     <Text style={styles.description}>{data.tempat_turun} - {data.jumlah_ayat} AYAT</Text>
-                                    <Image source={require('../assets/images/bismillah.png')} style={styles.bismillahImage} />
+                                    <Image source={require('../../assets/images/bismillah.png')} style={styles.bismillahImage} />
                                 </View>
                                 <TrackPlayerInit kiriman={{ surahNumber: props.route.params.pesan.nomor, namaLatin: data.nama_latin, }} />
                             </View>

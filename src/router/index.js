@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Home from './Home';
-import DetailSurah from './DetailSurah';
-import ListSurah from './ListSurah';
-import SettingPage from './SettingPage';
+import Home from '../pages/Home/Home';
+import DetailSurah from '../pages/DetailSurah/DetailSurah';
+import ListSurah from '../pages/ListSurah/ListSurah';
+import SettingPage from '../pages/SettingPage/SettingPage';
 
 const Stack = createStackNavigator();
 const HomeStack = createStackNavigator();

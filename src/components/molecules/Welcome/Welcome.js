@@ -7,7 +7,7 @@ const Welcome = () => {
         <View style={styles.container}>
             <Text style={styles.title}>Quran App</Text>
             <Text style={styles.subTitle}>Learn Quran and Recite once everyday</Text>
-            <Image source={require('../assets/images/welcome.png')} style={styles.image} />
+            <Image source={require('../../../assets/images/welcome.png')} style={styles.image} />
             <TouchableOpacity onPress={() => alert('haha')}>
                 <View style={styles.button}>
                     <Text style={styles.fontButton}>

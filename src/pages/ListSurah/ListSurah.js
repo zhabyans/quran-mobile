@@ -4,7 +4,7 @@ import Axios from 'axios';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import AsyncStorage from '@react-native-community/async-storage';
 import { connect } from 'react-redux';
-import ListSurahSource from './json/ListSurahSource.json'
+import ListSurahSource from '../../json/ListSurahSource.json'
 
 const ListSurah = (props) => {
     const [isLoading, setLoading] = useState(false);
@@ -79,7 +79,7 @@ const ListSurah = (props) => {
                     }
                     }>
                         <View style={styles.lastReadContainer} >
-                            <Image style={styles.lastSurahImage} source={require('../assets/images/last-surah.png')} />
+                            <Image style={styles.lastSurahImage} source={require('../../assets/images/last-surah.png')} />
                             <View style={styles.lastReadContainerText}>
                                 <View style={styles.lastReadRow}>
                                     <Image source={{ uri: 'https://img.icons8.com/color/96/000000/open-book.png' }} style={{ width: 22, height: 22, marginRight: 10 }} />

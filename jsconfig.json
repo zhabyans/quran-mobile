@@ -1,8 +1,0 @@
-{
-    "compilerOptions": {
-        "baseUrl": "QuranApp/src"
-    },
-    "include": [
-        "QuranApp/src"
-    ]
-}

@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import { RootContext } from './index'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Image, Text, View, Share, StyleSheet, Alert, BackHandler } from 'react-native';
 import { connect } from 'react-redux';
