@@ -1,21 +1,20 @@
 const initialState = {
-    ayatTerakhir: null,
-    reciter: null
-}
+  ayatTerakhir: null,
+  reciter: null,
+};
 
-export const user = (state = initialState, action) => {
-    if (action.type === "USER_INPUT") {
-        console.log('gerak');
-        return {
-            ...state,
-            ayatTerakhir: action.payload
-        };
-    }
-    if (action.type === "RECITER") {
-        return {
-            ...state,
-            reciter: action.payload
-        };
-    }
-    return state
-}
+export const userReducer = (state = initialState, action) => {
+  if (action.type === 'USER_INPUT') {
+    return {
+      ...state,
+      ayatTerakhir: action.payload,
+    };
+  }
+  if (action.type === 'RECITER') {
+    return {
+      ...state,
+      reciter: action.payload,
+    };
+  }
+  return state;
+};
