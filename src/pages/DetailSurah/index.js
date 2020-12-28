@@ -1,8 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { Text, View, Image, StyleSheet, FlatList, ActivityIndicator } from 'react-native'
 import TrackPlayer from 'react-native-track-player';
-import ListItemRender from '../../components/molecules/ListItemRender/ListItemRender';
-import TrackPlayerInit from '../../components/molecules/TrackPlayerInit/TrackPlayerInit';
+import { ListItemRender, TrackPlayerInit } from '../../components/molecules';
 import SwitchCaseSurah from '../../json/SwitchCaseSurah';
 
 const DetailSurah = (props) => {

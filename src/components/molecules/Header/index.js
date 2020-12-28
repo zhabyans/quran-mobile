@@ -1,9 +1,6 @@
-import React, { useEffect, useState, PureComponent } from 'react'
-import { Text, View, Image, StyleSheet, ActivityIndicator, FlatList, Button } from 'react-native'
-import Axios from 'axios';
+import React from 'react';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import AsyncStorage from '@react-native-community/async-storage';
-import { connect } from 'react-redux';
 
 const Header = (props) => {
     return (
@@ -21,7 +18,7 @@ const Header = (props) => {
                 }
                 }>
                     <View style={styles.lastReadContainer} >
-                        <Image style={styles.lastSurahImage} source={require('../assets/images/last-surah.png')} />
+                        <Image style={styles.lastSurahImage} source={require('../../../assets/images/last-surah.png')} />
                         <View style={styles.lastReadContainerText}>
                             <View style={styles.lastReadRow}>
                                 <Image source={{ uri: 'https://img.icons8.com/color/96/000000/open-book.png' }} style={{ width: 22, height: 22, marginRight: 10 }} />
