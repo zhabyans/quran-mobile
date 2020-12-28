@@ -26,9 +26,9 @@ export default () => {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen name='Home' component={Home} />
+                <Stack.Screen name='Home' component={Home} options={{ headerShown: false }} />
                 <Stack.Screen name='ListSurah' component={HomeStackScreen} options={{ headerShown: false }} />
-                <Stack.Screen name='SettingPage' component={SettingStackScreen} />
+                <Stack.Screen name='SettingPage' component={SettingStackScreen} options={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     );

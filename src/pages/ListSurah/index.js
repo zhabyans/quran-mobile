@@ -216,7 +216,7 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (nilai) => {
     return {
-        ayatTerakhir: nilai.ayatTerakhir
+        ayatTerakhir: nilai.user.ayatTerakhir
     };
 };
 

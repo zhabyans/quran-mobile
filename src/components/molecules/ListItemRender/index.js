@@ -113,6 +113,7 @@ class ListItemRender extends PureComponent {
 const mapDispatchToProps = (dispatch) => {
     return {
         nameHandle: (terima) => {
+            console.log(terima);
             dispatch({ type: "USER_INPUT", payload: terima })
         }
     };

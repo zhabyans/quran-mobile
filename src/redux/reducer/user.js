@@ -3,8 +3,9 @@ const initialState = {
     reciter: null
 }
 
-const iniReducer = (state = initialState, action) => {
+export const user = (state = initialState, action) => {
     if (action.type === "USER_INPUT") {
+        console.log('gerak');
         return {
             ...state,
             ayatTerakhir: action.payload
@@ -18,5 +19,3 @@ const iniReducer = (state = initialState, action) => {
     }
     return state
 }
-
-export default iniReducer
