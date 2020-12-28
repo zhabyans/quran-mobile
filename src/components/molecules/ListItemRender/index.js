@@ -61,7 +61,6 @@ class ListItemRender extends PureComponent {
   render() {
     return (
       <>
-        <Text>{JSON.stringify(this.props.ayatTerakhir)}</Text>
         <View style={{marginHorizontal: 20}}>
           <View
             style={{

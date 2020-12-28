@@ -100,7 +100,6 @@ const TrackPlayerInit = (props) => {
 
   return (
     <>
-      <Text>{reciter}</Text>
       <View
         style={{
           flex: 1,

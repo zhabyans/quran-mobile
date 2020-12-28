@@ -50,25 +50,31 @@ const SettingPage = (props) => {
 
   return (
     <ScrollView>
-      <View>
-        <Picker
-          selectedValue={props.reciter}
-          style={{height: 100, width: 450}}
-          onValueChange={(itemValue, itemIndex) => {
-            props.reciterHandle(itemValue);
-            storeData(itemValue);
-          }}>
-          {data.map((item, index) => (
-            <Picker.Item
-              label={`${item.name} ${item.rewaya}`}
-              value={item.Server}
-              key={item.id}
-            />
-          ))}
-        </Picker>
-        <Text>{JSON.stringify(data)}</Text>
-        {/* <Text>{props.reciter}</Text> */}
-        {/* <Text>{getData}</Text> */}
+      <View style={{marginHorizontal: 20, marginVertical: 10}}>
+        <Text style={{fontSize: 18, marginBottom: 10}}>
+          Silakan pilih pembaca quran:
+        </Text>
+        <View
+          style={{borderColor: '#aaa', borderWidth: 1, borderStyle: 'solid'}}>
+          <Picker
+            selectedValue={props.reciter}
+            style={{
+              color: '#333',
+              height: 50,
+            }}
+            onValueChange={(itemValue, itemIndex) => {
+              props.reciterHandle(itemValue);
+              storeData(itemValue);
+            }}>
+            {data.map((item, index) => (
+              <Picker.Item
+                label={`${item.name} ${item.rewaya}`}
+                value={item.Server}
+                key={item.id}
+              />
+            ))}
+          </Picker>
+        </View>
       </View>
     </ScrollView>
   );

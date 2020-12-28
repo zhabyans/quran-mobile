@@ -87,8 +87,6 @@ const ListSurah = (props) => {
     return (
       <>
         <View style={styles.containerHome}>
-          <Text style={styles.salam}>Assalamualaikum</Text>
-          <Text style={styles.name}>Muhammad Zhafran Zhabyansyah</Text>
           <TouchableOpacity
             onPress={() => {
               if (props.ayatTerakhir == null) {

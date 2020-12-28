@@ -10,7 +10,7 @@ const MainApp = () => {
   const {isLoading} = useSelector((state) => state.globalReducer);
   return (
     <>
-      <StatusBar barStyle="dark-content" backgroundColor="white" />
+      {/* <StatusBar translucent backgroundColor="transparent" /> */}
       <Welcome />
       {isLoading && <Loading />}
     </>
